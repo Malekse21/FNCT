@@ -9,13 +9,13 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       <header className="p-6 flex justify-between items-center border-b border-border/40">
-        <div className="font-bold text-xl tracking-tight">LATEXO V4</div>
+        <div className="font-bold text-xl tracking-tight">FNCT</div>
         <nav className="flex gap-4">
           <Link href="/muni" className="text-sm font-medium hover:underline underline-offset-4">
             Tableau de Bord Muni
           </Link>
           <Link href="/app" className="text-sm font-medium hover:underline underline-offset-4">
-            Tableau de Bord App
+            Tableau de Bord Wool
           </Link>
         </nav>
       </header>
@@ -31,11 +31,9 @@ export default function LandingPage() {
             Système en Ligne
           </div>
           <h1 className="text-5xl sm:text-7xl font-bold tracking-tighter">
-            Brutaliste. Minimaliste. Rapide.
-          </h1>
+Soufi app          </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Découvrez la prochaine génération de notre moteur de simulation. Contraste élevé, aucune distraction, conçu pour une concentration totale.
-          </p>
+Soufi          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
             <Button asChild size="lg" className="rounded-none h-12 px-8">
               <Link href="/muni">

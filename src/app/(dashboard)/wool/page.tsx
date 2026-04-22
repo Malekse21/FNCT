@@ -13,15 +13,15 @@ export default function AppDashboard() {
         className="max-w-5xl mx-auto space-y-8"
       >
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">App Dashboard</h1>
-          <p className="text-muted-foreground mt-2">Application core controls and simulation management.</p>
+          <h1 className="text-3xl font-bold tracking-tight">Tableau de Bord App</h1>
+          <p className="text-muted-foreground mt-2">Contrôles de base de l'application et gestion des simulations.</p>
         </div>
 
         <div className="grid gap-4 md:grid-cols-3">
           {[
-            { title: "System Load", value: "24%", icon: Zap },
-            { title: "Active Simulations", value: "3", icon: Terminal },
-            { title: "Security Events", value: "0", icon: ShieldAlert },
+            { title: "Charge Système", value: "24%", icon: Zap },
+            { title: "Simulations Actives", value: "3", icon: Terminal },
+            { title: "Événements de Sécurité", value: "0", icon: ShieldAlert },
           ].map((stat, i) => (
             <div key={i} className="border border-border/50 p-6 flex flex-col justify-between bg-card">
               <div className="flex justify-between items-center mb-4">
@@ -35,20 +35,20 @@ export default function AppDashboard() {
 
         <div className="grid gap-4 md:grid-cols-2">
           <div className="border border-border/50 p-6 bg-card min-h-[300px] flex flex-col">
-            <h2 className="text-lg font-semibold mb-4">Groq LLM Status</h2>
+            <h2 className="text-lg font-semibold mb-4">Statut LLM Groq</h2>
             <div className="flex-1 flex flex-col items-center justify-center border-2 border-dashed border-border/50 bg-muted/20">
               <div className="w-3 h-3 rounded-full bg-green-500 mb-2 animate-pulse" />
-              <p className="text-sm text-muted-foreground">Connected & Ready</p>
+              <p className="text-sm text-muted-foreground">Connecté et Prêt</p>
             </div>
           </div>
           <div className="border border-border/50 p-6 bg-card min-h-[300px] flex flex-col">
-            <h2 className="text-lg font-semibold mb-4">Quick Actions</h2>
+            <h2 className="text-lg font-semibold mb-4">Actions Rapides</h2>
             <div className="flex-1 flex flex-col gap-3 justify-center">
               <button className="bg-foreground text-background px-4 py-3 text-sm font-medium hover:bg-foreground/90 transition-colors">
-                Start New Simulation
+                Démarrer une Nouvelle Simulation
               </button>
               <button className="bg-transparent border border-border px-4 py-3 text-sm font-medium hover:bg-muted transition-colors">
-                View Logs
+                Voir les Journaux
               </button>
             </div>
           </div>

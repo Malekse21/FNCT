@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn(inter.variable, plexMono.variable, sourceSerif.variable)}>
+    <html lang="fr" className={cn(inter.variable, plexMono.variable, sourceSerif.variable)}>
       <body className="font-sans antialiased">
         <NextTopLoader color="#000000" showSpinner={false} />
         {children}

@@ -14,10 +14,10 @@ export default function AppLayout({
           className="flex items-center text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Home
+          Retour à l'Accueil
         </Link>
         <div className="ml-auto flex items-center space-x-4">
-          <div className="text-sm font-medium tracking-tight">System Status: <span className="text-green-500">Operational</span></div>
+          <div className="text-sm font-medium tracking-tight">Statut du Système : <span className="text-green-500">Opérationnel</span></div>
         </div>
       </header>
       <div className="flex-1 flex flex-col relative z-0">

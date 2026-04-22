@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { format } from "date-fns";
+import { fr } from "date-fns/locale";
 import { Box } from "lucide-react";
 
 export function MuniNavbar() {
@@ -28,20 +29,20 @@ export function MuniNavbar() {
           <Box className="w-6 h-6" />
         </div>
         <div className="font-bold font-serif text-xl tracking-tight text-[#5D4037]">
-          Tunis Municipality
+          Municipalité de Tunis
         </div>
       </div>
 
       {/* Middle: Date and Time */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-mono text-sm tracking-tight text-[#455A64] hidden md:block">
-        {mounted ? format(time, "EEEE, MMMM do yyyy | HH:mm:ss") : "Loading time..."}
+        {mounted ? format(time, "EEEE d MMMM yyyy | HH:mm:ss", { locale: fr }) : "Chargement de l'heure..."}
       </div>
 
       {/* Right: Status Indicator */}
       <div className="flex items-center gap-3 relative z-10">
         <div className="flex items-center gap-2 text-xs font-mono px-3 py-1.5 border-[1.5px] border-[#6B8E23] text-[#6B8E23] rounded-[4px] bg-[#6B8E23]/10">
           <div className="w-2 h-2 rounded-full bg-[#6B8E23] animate-pulse" />
-          SYSTEM VERIFIED
+          SYSTÈME VÉRIFIÉ
         </div>
       </div>
     </nav>
