@@ -12,10 +12,10 @@ export default function LandingPage() {
         <div className="font-bold text-xl tracking-tight">LATEXO V4</div>
         <nav className="flex gap-4">
           <Link href="/muni" className="text-sm font-medium hover:underline underline-offset-4">
-            Muni Dashboard
+            Tableau de Bord Muni
           </Link>
           <Link href="/app" className="text-sm font-medium hover:underline underline-offset-4">
-            App Dashboard
+            Tableau de Bord App
           </Link>
         </nav>
       </header>
@@ -28,23 +28,23 @@ export default function LandingPage() {
           className="max-w-3xl space-y-6"
         >
           <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80">
-            System Online
+            Système en Ligne
           </div>
           <h1 className="text-5xl sm:text-7xl font-bold tracking-tighter">
-            Brutalist. Minimal. Fast.
+            Brutaliste. Minimaliste. Rapide.
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Experience the next generation of our simulation engine. High contrast, zero distractions, built with pure focus in mind.
+            Découvrez la prochaine génération de notre moteur de simulation. Contraste élevé, aucune distraction, conçu pour une concentration totale.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
             <Button asChild size="lg" className="rounded-none h-12 px-8">
               <Link href="/muni">
-                Enter Muni <ArrowRight className="ml-2 h-4 w-4" />
+                Entrer Muni <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-none h-12 px-8">
               <Link href="/app">
-                Enter App
+                Entrer App
               </Link>
             </Button>
           </div>
