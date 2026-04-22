@@ -5,7 +5,7 @@ import { Activity, Database, Users } from "lucide-react";
 
 export default function MuniDashboard() {
   return (
-    <main className="flex-1 p-8">
+    <main className="flex-1 p-8 text-[#263238]">
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -13,8 +13,8 @@ export default function MuniDashboard() {
         className="max-w-5xl mx-auto space-y-8"
       >
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">Muni Dashboard</h1>
-          <p className="text-muted-foreground mt-2">Municipal oversight and metrics.</p>
+          <h1 className="text-3xl font-bold font-serif tracking-tight text-[#5D4037]">Muni Dashboard</h1>
+          <p className="text-[#455A64] mt-2 font-mono text-sm">Municipal oversight and metrics.</p>
         </div>
 
         <div className="grid gap-4 md:grid-cols-3">
@@ -23,20 +23,20 @@ export default function MuniDashboard() {
             { title: "Active Reports", value: "89", icon: Activity },
             { title: "Data Nodes", value: "4", icon: Database },
           ].map((stat, i) => (
-            <div key={i} className="border border-border/50 p-6 flex flex-col justify-between bg-card">
+            <div key={i} className="border-[1.5px] border-[#455A64] p-6 flex flex-col justify-between bg-[#EDE8E0] rounded-[4px]">
               <div className="flex justify-between items-center mb-4">
-                <span className="text-sm font-medium text-muted-foreground">{stat.title}</span>
-                <stat.icon className="h-4 w-4 text-muted-foreground" />
+                <span className="text-sm font-medium text-[#455A64]">{stat.title}</span>
+                <stat.icon className="h-4 w-4 text-[#455A64]" />
               </div>
-              <span className="text-3xl font-bold">{stat.value}</span>
+              <span className="text-3xl font-bold font-mono tracking-tight text-[#5D4037]">{stat.value}</span>
             </div>
           ))}
         </div>
 
-        <div className="border border-border/50 p-6 bg-card min-h-[400px] flex flex-col">
-          <h2 className="text-lg font-semibold mb-4">Recent Activity</h2>
-          <div className="flex-1 flex items-center justify-center border-2 border-dashed border-border/50 bg-muted/20">
-            <p className="text-sm text-muted-foreground">No recent activity to display.</p>
+        <div className="border-[1.5px] border-[#455A64] p-6 bg-[#EDE8E0] min-h-[400px] flex flex-col rounded-[4px]">
+          <h2 className="text-lg font-semibold font-serif mb-4 text-[#5D4037]">Recent Activity</h2>
+          <div className="flex-1 flex items-center justify-center border-2 border-dashed border-[#455A64]/50 bg-[#F5F2ED]/50 rounded-[4px]">
+            <p className="text-sm font-mono text-[#455A64]">No recent activity to display.</p>
           </div>
         </div>
       </motion.div>

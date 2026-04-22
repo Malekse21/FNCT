@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export default function DashboardLayout({
+export default function AppLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col">
+    <div className="min-h-screen flex flex-col bg-background text-foreground">
       <header className="h-16 border-b border-border/40 flex items-center px-6 sticky top-0 bg-background/80 backdrop-blur-sm z-50">
         <Link 
           href="/" 
@@ -20,7 +20,7 @@ export default function DashboardLayout({
           <div className="text-sm font-medium tracking-tight">System Status: <span className="text-green-500">Operational</span></div>
         </div>
       </header>
-      <div className="flex-1 flex">
+      <div className="flex-1 flex flex-col relative z-0">
         {children}
       </div>
     </div>
