@@ -21,8 +21,8 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Latexo V4",
-  description: "B&W Brutalist Next.js App",
+  title: "Soufterra",
+  description: "fnct",
 };
 
 export default function RootLayout({
